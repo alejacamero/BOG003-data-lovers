@@ -4,135 +4,121 @@
     <meta charset="utf-8">
     <title>Datalover Studio Ghibli</title>
     <meta name="viewport" content="width=device-width, user-scable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lancelot&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/dc9339510c.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="padre">
-       <header class="header">
-         <div class="menu">
-            <div class="logo">
-               <a href="#">Santiario Ghibli</a>
-            </div>
-            <nav class="nav">
-               <div><a href="#">Filtro Director<img src="..//img/icons8-facebook-rodeado-de-círculo-48.png" alt="logo-facebook"></a></div>
-               <div><a href="#">Ordenar A-Z<img src="..//img/icons8-instagram-48.png" alt="logo-instagram"></a>
-                  <ul class="menuDesplegable">
-                     <li><a href="#">Hayao Miyazaki</a>/li>
-                     <li><a href="#">Isao Takahata</a>/li>
-                     <li><a href="#">Hiroyuki Morita</a>/li>
-                     <li><a href="#">Gorō Miyazaki</a>/li>
-                     <li><a href="#">Hiromasa Yonebayashi</a>/li>
-                     <li><a href="#">Yoshifumi Kondō</a>/li>
-                  </ul> 
-               </div>
-               <div><a href="#">Ranking<img src="..//img/icons8-whatsapp-48.png" alt="logo-whatssap"></a></div>
-            </nav>
-         </div>
-       </header>
-      </div> 
-      <section id="section1" class="section1">
-        <!-- <h1>!!Selecciona tu tipo de baño!!</h1>
-         <div class="articulos1">
-            <article class="article">
-               <img src="../img/perrito numberone.jpg" alt="perrito pocion uno">
-               <a class="button" id="numberOne" role="button">Number One</a>
-            </article>
-            <article class="article">
-               <img class="imagenConejito" src="../img/conejitopremium.jpg" alt="Conejito">
-               <a class="button" id="premium" role="button">Premium</a>
-            </article>  
-         </div>
-      </section>
-      <section id="section2" class="section2">
-         <div class="articulos">
-            <article class="article">
-               <img src="../img/baño-1.png" alt="baño1">
-            </article>
-            <a class= "agendatuCita" href="#">Agenda tu cita</a>
-            <article class="article">
-               <h3>!!Elegiste el baño Number One!!</h3> 
-               <img src="../img/perrito numberone.jpg" alt="perrito pocion uno">
-               <a id="irPagar1" href="#">Ir a pagar</a>
-            </article>  
-         </div>
-      </section>
-      <section id="section3" class="section3">
-         <div class="articulos">
-            <article class="article">
-               <img src="..//img/baño-2.png" alt="baño2">
-            </article>
-            <a class="agendatuCita" href="#">Agenda tu cita</a>
-            <article class="article">
-               <h3>!!Elegiste el baño Premium!!</h3> 
-               <img class="imagenConejito" src="../img/conejitopremium.jpg" alt="Conejito">
-               <a id="irPagar2" href="#">Ir a pagar</a>
-            </article>  
-         </div>
-      </section>
-      <section id="section4" class="section4">
-         
-         <div class="articulos">
-            <article class="articleForm">
-               <form action="" id="formularioTarjeta" class="formularioTarjeta">
-                  <div class="grupo">
-                     <label for="inputNumero">Número Tarjeta</label>
-                     <input class="inputNumero" type="text" id="inputNumero" maxlength="19" autocomplete="off">
-                  </div>
-                  <div class="grupo">
-                     <label for="inputNombre">Nombre</label>
-                     <input class="inputNombre" type="text" id="inputN" maxlength="19" autocomplete="off">
-                  </div>                  
-                  <div class="flexbox">
-                     <div class="grupo expira">       
-                        <div class="grupoExpira">
-                           <label for="selectMes">Expiración</label>
-                           <div>
-                              <div class="grupo-select">
-                                 <select name="mes" id="selectMes">
-                                 <option disabled selected>Mes</option>
-                                 </select>
-                                 <i class="fas fa-angle-down"></i>
-                              </div>
-                              <div class="grupo-select">
-                                 <select name="year" id="selectYear">
-                                    <option disabled selected>Año</option>
-                                 </select>
-                                 <i class="fas fa-angle-down"></i>
-                              </div>
-                           </div>
-                           <div class="grupo-ccv">
-                              <label for="inputCVV">CCV</label>
-                              <input type="text" id="inputCVV" maxlength="3">
-                           </div>
-                        </div>
-                     </div>      
-                  </div>
-               </form>
-               <p class="validadorpag4" id="resultadoValiador"></p>  
-            </article>
-            <article class="article">
-               <a class="button" id="validarTarjeta" role="button">Validar Tarjeta</a>
-               <a href="#">Ir a pagar</a>
-            </article>
-            <article class="article">
-               <img class="tarjetaValidadora" src="../img/tarjeta validadora.png" alt="tarjeta validadora">
-            </article>  
-         </div>   
-         <div class="paginaFinal">
-            <p class="p-exitoso">Pago Exitoso</p>
-            <p class="p-valor">Valor $120.000</p>
-            <p class="p-cita">Nuestros asesores se comunicarán contigo para agendar tu cita</p>
-         </div>
-      </section>
-       <footer class="footer">
-        <nav class="pie">
-           <a class="a-footer" href="#">© 2020 Landify UI Kit. All rights reserved</a>
+    <header class="header">
+      <div class="menu">
+        <div class="logo">
+          <a href="#">Santuario Ghibli</a>
+        </div>
+        <nav class="nav">
+          <div><a href="#">Filtro Director<img src="..//Img/desplegable1.png" alt="desplegar1"></a>
+            <ul class="menuDesplegable">
+              <li><a href="#">Hayao Miyazaki</a>
+              <li><a href="#">Isao Takahata</a>
+              <li><a href="#">Hiroyuki Morita</a>
+              <li><a href="#">Gorō Miyazaki</a>
+              <li><a href="#">Hiromasa Yonebayashi</a>
+              <li><a href="#">Yoshifumi Kondō</a>
+            </ul> 
+          </div>
+          <div><a href="#">Ordenar A-Z<img src="..//Img/desplegable1.png" alt="desplegar2"></a>
+            <ul class="menuDesplegable menuOrdenar">
+              <li><a class="letraMenuAlaZ" href="#">Ascendente A-Z</a>
+              <li><a href="#">Descendente Z-A</a>
+            </ul> 
+          
+          </div>
+          <div><a href="#">Ranking<img src="..//Img/Star 3Estrella1.png" alt="Etrella ranking"></a>
+            <ul class="menuDesplegable ranking">
+              <li><a class="rankingMenu" href="#">Cielo</a>
+              <li><a href="#">Tierra</a>
+            </ul>
+          </div>
         </nav>
-       </footer> -->
-     <script src="index.js" type="module"></script>
+      </div>
+    </header>
+    <section id="section1" class="section1">
+      <div class="container">
+        <div class="card">
+          <div class="top-row background-top-row">
+            <h4>Porco Rosso</h4>
+          </div>
+          <img  class= "posterPelicula" src="..//Img/Porco_Rosso.jpg" alt="ImagenPoster">
+          <div class="content">
+            <h3>Hayao Miyazaki</h3>
+            <!-- <button class="button background-top-row">Empezar</button> -->
+          </div>
+        </div>
+        <div class="card">
+          <div class="top-row background-top-row">
+            <h4>Porco Rosso</h4>
+          </div>
+          <img  class= "posterPelicula" src="..//Img/Porco_Rosso.jpg" alt="ImagenPoster">
+          <div class="content">
+            <h3>Hayao Miyazaki</h3>
+            <!-- <button class="button background-top-row">Empezar</button> -->
+          </div>
+        </div>
+        <div class="card">
+          <div class="top-row background-top-row">
+            <h4>Porco Rosso</h4>
+          </div>
+          <img  class= "posterPelicula" src="..//Img/Porco_Rosso.jpg" alt="ImagenPoster">
+          <div class="content">
+            <h3>Hayao Miyazaki</h3>
+            <!-- <button class="button background-top-row">Empezar</button> -->
+          </div>
+        </div>
+        <div class="card">
+          <div class="top-row background-top-row">
+            <h4>Porco Rosso</h4>
+          </div>
+          <img  class= "posterPelicula" src="..//Img/Porco_Rosso.jpg" alt="ImagenPoster">
+          <div class="content">
+            <h3>Hayao Miyazaki</h3>
+            <!-- <button class="button background-top-row">Empezar</button> -->
+          </div>
+        </div>
+        <div class="modalRanking">
+          <img  class= "ImagenGataRanking" src="../Img/imagengataranking.png" alt="Imagen gata Ranking">
+          <div class="modalCard">
+            <p>Encuentra el ranking de las peliculas</p>
+            <div class="rankingInterno">
+              <!--<p class="botonCerrar">X</p> -->
+              <div class="cajitaRanking">
+                <div class="estrellas"><img class="estrella" src="..//Img/Star 3.png"></div>
+                <p class="numeroRanking">+ 90</p>
+                <p class="tituloranking">Cielo</p>
+              </div>
+              <div class="lineaSeparador">
+              </div>
+              <div class="cajitaRanking">
+                <div class="estrellas"><img class="estrella" src="..//Img/Star 3.png"></div>
+                <p class="numeroRanking">- 90</p>
+                <p class="tituloranking">Tierra</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="social">
+        <div class="icon"><a href="#"><i class="fab fa-facebook fa-lg"></i></a></div>
+        <div class="icon"><a href="#"><i class="fab fa-instagram fa-lg"></i></a></div>
+        <div class="icon"><a href="#"><i class="fab fa-whatsapp fa-lg"></i></a></div>
+      </div>
+    </footer>
+       <script src="index.js" type="module"></script>
   </body>
 </html>
-
+ 

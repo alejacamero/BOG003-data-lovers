@@ -1,0 +1,59 @@
+  
+* {
+ margin: 0px;
+ padding: 10px;
+ box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
+ font-weight: 200;
+}
+
+
+
+.header {
+ width: 100%;
+ background-color: aqua;
+}
+
+.nav {
+ width: 1000px;
+ margin: 30px;
+}
+
+.nav menuDesplegable {
+  list-style: none;
+}
+
+.nav > div {
+  position: relative;
+  display: inline-block;
+}
+
+.nav > div > a {
+  display: block;
+  padding: 15px 20px;
+  color: #ffffff;
+  text-decoration: none;
+
+}
+
+.nav  div a {
+  color:black;
+  transition: all .3s;;
+
+}
+
+/*menu desplegable directores*/
+
+.menuDesplegable {
+  position: absolute;
+  background: brown;
+  width: 120%;
+
+}
+
+.menuDesplegable li a {
+  display: block;
+  padding: 15px;
+  color: #ffffff
+  text-decoration: none;
+}

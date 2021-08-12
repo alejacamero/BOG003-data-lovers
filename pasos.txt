@@ -1,0 +1,8 @@
+1. Funcion filter: filterData(data, condition): esta función filter o filtrar recibiría la data, y nos retornaría aquellos datos que sí cumplan con la condición.
+- Data  : data de Ghibli
+- condition seria filter = al nombre del  director de studio Ghibli 
+- El nombre del director se desplega al dar clc en el menu, en ese nombre que queremos se selecciona. Ese nombre lo guardamos en una variable
+Recorrer por medio de un .map el array de directores y dentro de ese array otra condicion. y dentro del array poner el filter del elemento 
+EL filtro seria  el elemento i es === al nombre del director si es true 
+1. vamos a crear las variables con el nombre de la pelicula, el rankin, el director y el poster.
+2. Crear  una plantilla se con bacticks que tenga el html por dentro

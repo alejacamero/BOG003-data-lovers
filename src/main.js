@@ -248,6 +248,8 @@ document.getElementById("botonRanking").addEventListener("click", function menuD
 
 document.getElementById("rankingCielo").addEventListener("click", function menuDesplegarCielo(){
   let rankingCieloUno = document.getElementById("rankingCielo").innerHTML;
+  console.log(rankingCieloUno);
+  tipoRanking(rankingCieloUno);
   document.getElementById("menuDesplegableRanking").style.display ="none";
 } );
 
@@ -255,6 +257,8 @@ document.getElementById("rankingCielo").addEventListener("click", function menuD
 
 document.getElementById("rankingTierra").addEventListener("click", function menuDesplegarTierra(){
   let rankingTierra = document.getElementById("rankingTierra").innerHTML;
+  console.log(rankingTierra);
+  tipoRanking(rankingTierra);
   document.getElementById("menuDesplegableRanking").style.display ="none";
 } );
 
@@ -348,81 +352,42 @@ let tipoOrden = (tipoDeOrdenamiento) => {
 console.log(tipoOrden("Ascendente A-Z"));
 console.log(tipoOrden("Descendente Z-A"));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let stringSortHtml = "";
-let matchSortAz = sortAZ.map(title => {
-    console.log(title);
-
-    let filmTitle = title;
-
-    let filterTitle = data.films.filter(data => {
-        if (data.title === filmTitle){
-           console.log(data.title);
-            stringSortHtml += ` 
-           <div class="card">
-               <div class="top-row background-top-row">
-                   <h4>${data.title}</h4>
-               </div>
-               <img  class= "posterPelicula" src="${data.poster}" alt="Imagen ${data.title}">
-               <div class="content">
-                   <h3>${data.director}</h3>
-                   <h3>Ranking ${data.rt_score}</h3>
-               <!-- <button class="button background-top-row">Empezar</button> -->
-               </div>
-           </div>`;
-        
+let tipoRanking = (tipoRanking) => {
+    let tipoDeRanking = tipoRanking;
+ //En esta funcion vamos a crear dos arrays uno va a contener las peliculas de cielo 
+ //el otro las peliculas de tierra y se retornaria el array con las peliculas tierra 
+    let returnRankingArray = () => {
+        if (tipoDeRanking === "Cielo"){
+            let arrayCielo = data.films.filter(film => Number(film.rt_score) >= 90);
+            console.log(arrayCielo);
+            return arrayCielo;
+        } 
+        else {
+            let arrayTierra = data.films.filter(film => Number(film.rt_score)  < 90); 
+            return arrayTierra;
         }
-        
+    
+    };
+
+    console.log(returnRankingArray());
+    console.log(tipoRanking);
+    let stringHtmlRanking = "";
+    let matchRanking = returnRankingArray().map(film => {
+        console.log(film);
+        stringHtmlRanking +=  ` 
+        <div class="card">
+            <div class="top-row background-top-row">
+                <h4>${film.title}</h4>
+            </div>
+            <img  class= "posterPelicula" src="${film.poster}" alt="Imagen ${film.title}">
+            <div class="content">
+                <h3>${film.director}</h3>
+                <h3>Ranking ${film.rt_score}</h3>
+            <!-- <button class="button background-top-row">Empezar</button> -->
+            </div>
+        </div>`;
     });
 
-});
-
-sectionOne.innerHTML = stringSortHtml;
-console.log(sectionOne);
-
-    
-
-sortAZ.sort();
-console.log(sortAZ.reverse());
-
-
-
-//console.log(data.title === filmTitle ? data.title : null);
-
-//hacer una variable que refciba el estrin de html en un estring vacio 
-//dentro del if como en el ejemplo del filter 
-//llenar la variable de strin html
-//salimos del filtro director y asignamos a section one el nuevo string;
-
-//hacer una funcion que nos reciba un string orden ascendente u orden descendente 
-//almacenarlo en una variable, esavariable es la que vamos a utilizar y crear una condicional 
-//si es orden ascendente 
-//si s orden ascendenteq tome el arreglo sortAz.sort() y que me devuleva en el arreglo a que se le aplica map
+    sectionOne.innerHTML = stringHtmlRanking;
+    console.log(sectionOne);
+};

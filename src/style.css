@@ -468,4 +468,12 @@ h3 {
      opacity: 0;
      visibility: hidden;
   }
-}
+}*/
+
+@media (min-widt: 436px ) {
+
+  .section1 {
+    height:3500px;
+  } 
+
+};

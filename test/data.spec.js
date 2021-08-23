@@ -1,14 +1,14 @@
-import { example, anotherExample } from '../src/data.js';
+import {sortZA, anotherExample } from '../src/data.js';
 
 
-describe('example', () => {
+describe('sortZA', () => {
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof sortZA).toBe('function');
   });
 
-  it('returns `example`', () => {
+  /*it('returns `example`', () => {
     expect(example()).toBe('example');
-  });
+  });*/
 });
 
 

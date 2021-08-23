@@ -2,6 +2,8 @@ import data from './data/ghibli/ghibli.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
 console.log(typeof data.films[0].director);
+console.log(data.films[0].title);
+
 
 let sectionOne = document.getElementById("section1");
 console.log(sectionOne);
@@ -103,6 +105,7 @@ paisesLatinoamerica("argentina", "colombia", "brazil", "chile");
     });
 });
 */
+//función Filter
 
 let cardsPorDirector = (nombreDirectorSeleccionado) => {
     
@@ -125,14 +128,14 @@ let cardsPorDirector = (nombreDirectorSeleccionado) => {
                 <!-- <button class="button background-top-row">Empezar</button> -->
                 </div>
             </div>`; 
-        }
+        };
     });
     sectionOne.innerHTML = stringHtml;
     console.log(sectionOne);
 
-}
+};
 
-//cardsPorDirector("Hayao Miyazaki");
+//Menu desplegable categorias
 
 document.getElementById("HayaoMiyazaki").addEventListener("click", function desplegarDirector() {
     let directorHayao = document.getElementById("HayaoMiyazaki").innerHTML;
@@ -210,3 +213,216 @@ document.getElementById("mostrarTodas").addEventListener("click", function despl
 //crear el boton y funcion de ordenar de la a la z y que se oculte
 //otra funcoin q cuand le de clic le ponga el cuadro amarillo, dislay none y q traiga el contenido de HTML;
 //abrir elgir uno e abra y se cierre ;
+
+//desplegar menu ordenar
+
+document.getElementById("btnOrdenar").addEventListener("click", function desplegarOrdenar() {
+   document.getElementById("menuDesplegableOrdenar").style.display ="flex";
+} );
+
+//desplegar AZ
+document.getElementById("ordenarAscendente").addEventListener("click", function menuDesplegableOrdenar(){
+    let ordenAscendenteBtn = document.getElementById("ordenarAscendente").innerHTML;
+    console.log(ordenAscendenteBtn);
+    tipoOrden(ordenAscendenteBtn);
+    document.getElementById("menuDesplegableOrdenar").style.display ="none";
+} );
+
+
+//desplegar ZA
+
+document.getElementById("OrdenarDescendente").addEventListener("click", function menuDesplegableOrdenar(){
+    let ordenDescendenteBtn = document.getElementById("OrdenarDescendente").innerHTML;
+    console.log(ordenDescendenteBtn);
+    tipoOrden(ordenDescendenteBtn);
+    document.getElementById("menuDesplegableOrdenar").style.display ="none";
+} );
+
+//desplegar menu Ranking
+
+document.getElementById("botonRanking").addEventListener("click", function menuDesplegarRanking(){
+  document.getElementById("menuDesplegableRanking").style.display ="flex";
+});
+
+//desplegar Cielo
+
+document.getElementById("rankingCielo").addEventListener("click", function menuDesplegarCielo(){
+  let rankingCieloUno = document.getElementById("rankingCielo").innerHTML;
+  document.getElementById("menuDesplegableRanking").style.display ="none";
+} );
+
+//desplegar Tierra
+
+document.getElementById("rankingTierra").addEventListener("click", function menuDesplegarTierra(){
+  let rankingTierra = document.getElementById("rankingTierra").innerHTML;
+  document.getElementById("menuDesplegableRanking").style.display ="none";
+} );
+
+
+
+
+/*document.getElementById("btnOrdenar").addEventListener("click", function desplegarOrdenar() {
+
+let OrdenarAz = document.getElementById("ordenarAscendente").innerHTML;
+    OrdenarAz();
+
+
+document.getElementById("menuDesplegableOrdenar").style.display ="none";*/
+
+//Pasos para crear la funcion ordenar 
+//2.Crear una funcion que al pasarle yo el string que va a decir lo q le pidamos en la pagina web
+//a la funcion ordenarla o aplicarle el reverse
+
+[
+    "Whisper of the Heart",
+    "When Marnie Was There",
+    "The Wind Rises",
+    "The Tale of the Princess Kaguya",
+    "The Secret World of Arrietty",
+    "The Cat Returns",
+    "Tales from Earthsea",
+    "Spirited Away",
+    "Princess Mononoke",
+    "Porco Rosso",
+    "Ponyo on the Cliff by the Sea",
+    "Pom Poko",
+    "Only Yesterday",
+    "My Neighbors the Yamadas",
+    "My Neighbor Totoro",
+    "Kiki's Delivery Service",
+    "Howl's Moving Castle",
+    "Grave of the Fireflies",
+    "From Up on Poppy Hill",
+    "Castle in the Sky"
+]
+//returnArray es una función que representa el arrglo en donde tenemos dos condiciones dependiendo de lo que queremos q haga
+let tipoOrden = (tipoDeOrdenamiento) => {
+    let tipoOrden = tipoDeOrdenamiento;
+    let returnArray = () => {
+        console.log(tipoOrden);
+        let arrayTitles = data.films.map(item => {
+            let titulo = item.title;
+            return titulo;
+        });
+        if (tipoOrden === "Ascendente A-Z"){
+            return arrayTitles.sort();
+        }  else if (tipoOrden === "Descendente Z-A"){
+            return arrayTitles.reverse();
+        }
+
+    };
+    console.log(returnArray());
+    let stringSortHtml = "";
+    let matchSortAz = returnArray().map(title => {
+        console.log(title);
+
+        let filmTitle = title;
+
+        let filterTitle = data.films.filter(data => {
+            if (data.title === filmTitle){
+            console.log(data.title);
+                stringSortHtml += ` 
+            <div class="card">
+                <div class="top-row background-top-row">
+                    <h4>${data.title}</h4>
+                </div>
+                <img  class= "posterPelicula" src="${data.poster}" alt="Imagen ${data.title}">
+                <div class="content">
+                    <h3>${data.director}</h3>
+                    <h3>Ranking ${data.rt_score}</h3>
+                <!-- <button class="button background-top-row">Empezar</button> -->
+                </div>
+            </div>`;
+            
+            }
+            
+        });
+
+    });
+
+    sectionOne.innerHTML = stringSortHtml;
+    console.log(sectionOne);
+
+};
+
+console.log(tipoOrden("Ascendente A-Z"));
+console.log(tipoOrden("Descendente Z-A"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let stringSortHtml = "";
+let matchSortAz = sortAZ.map(title => {
+    console.log(title);
+
+    let filmTitle = title;
+
+    let filterTitle = data.films.filter(data => {
+        if (data.title === filmTitle){
+           console.log(data.title);
+            stringSortHtml += ` 
+           <div class="card">
+               <div class="top-row background-top-row">
+                   <h4>${data.title}</h4>
+               </div>
+               <img  class= "posterPelicula" src="${data.poster}" alt="Imagen ${data.title}">
+               <div class="content">
+                   <h3>${data.director}</h3>
+                   <h3>Ranking ${data.rt_score}</h3>
+               <!-- <button class="button background-top-row">Empezar</button> -->
+               </div>
+           </div>`;
+        
+        }
+        
+    });
+
+});
+
+sectionOne.innerHTML = stringSortHtml;
+console.log(sectionOne);
+
+    
+
+sortAZ.sort();
+console.log(sortAZ.reverse());
+
+
+
+//console.log(data.title === filmTitle ? data.title : null);
+
+//hacer una variable que refciba el estrin de html en un estring vacio 
+//dentro del if como en el ejemplo del filter 
+//llenar la variable de strin html
+//salimos del filtro director y asignamos a section one el nuevo string;
+
+//hacer una funcion que nos reciba un string orden ascendente u orden descendente 
+//almacenarlo en una variable, esavariable es la que vamos a utilizar y crear una condicional 
+//si es orden ascendente 
+//si s orden ascendenteq tome el arreglo sortAz.sort() y que me devuleva en el arreglo a que se le aplica map

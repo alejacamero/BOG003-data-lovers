@@ -15,7 +15,7 @@ body {
 
 .header {
   width: 100%;
-  background-color: #75C4D8;
+  background-color: #20DAD8;
   opacity: 0.7;
   padding: 12px 0px 9px 0px;
   margin-bottom: 20px;
@@ -105,7 +105,7 @@ body {
   top: 27px;
   left: -17px;
   background: #F96160;
-  opacity: 0.6;
+  opacity: 17.6;
   width: 156px;
   list-style: none;
   display: none;    
@@ -113,6 +113,7 @@ body {
   align-items: center;
   box-shadow: 5px 10px 18px #888888;
   overflow-x: hidden;
+  z-index: -1;
 
 }
 
@@ -140,7 +141,7 @@ body {
   top: 27px;
   left: -17px;
   background: #959DCF;
-  opacity: 0.8;
+  opacity: 17.6;
 }
 
 .ranking li a {
@@ -177,13 +178,20 @@ body {
 }
 
 .btn-mostrarTodas {
-  color: #000000;
+  color: #ffffff;
   font-size: .8rem;
   padding: .5rem .3rem;
   letter-spacing: .1rem;
   align-self: flex-end;
-  background-color: yellow;
+  background-color: #87BFB4;
+  opacity: 0.6;
   position: absolute;
+  text-decoration: none;
+  font-weight: 300;
+  border-radius:15px 50px 30px 5px; 
+  border-right-color: coral;
+  border-right-width: 7px;
+  text-align: center;
 }
 
 .section1 {
@@ -197,7 +205,7 @@ body {
 }
 
 .footer {
-  background-color: #75C4D8;
+  background-color: #20DAD8;
   opacity: 0.7;
   display: flex;
   flex-direction: row;

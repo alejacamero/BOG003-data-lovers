@@ -1,111 +1,16 @@
 import data from './data/ghibli/ghibli.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
-console.log(typeof data.films[0].director);
-console.log(data.films[0].title);
-
-
+//variable principal en la que estamos metiendo todas las cards.
 let sectionOne = document.getElementById("section1");
-console.log(sectionOne);
 
-
-let nombreDirectorPrincipal = document.getElementById("HiroyukiMorita").innerHTML;
-console.log(nombreDirectorPrincipal);
-
-let nombreDirectorPrincipal1 = document.getElementById("GorōMiyazaki").innerHTML;
-console.log(nombreDirectorPrincipal1);
-
-let nombreDirectorPrincipal2 = document.getElementById("HiromasaYonebayashi").innerHTML;
-console.log(nombreDirectorPrincipal2);
-
-let nombreDirectorPrincipal3 = document.getElementById("YoshifumiKondō").innerHTML;
-console.log(nombreDirectorPrincipal3);
-
-let nombreDirectorPrincipal4 = document.getElementById("IsaoTakahata").innerHTML;
-console.log(nombreDirectorPrincipal4);
-
-let nombreDirectorPrincipal5 = document.getElementById("HayaoMiyazaki").innerHTML;
-console.log(nombreDirectorPrincipal5);
-
-
-
-/*document.getElementById("menuFiltro").addEventListener("click",function menuFiltro() {
-    document.getElementById("menuFiltro").style.display = "none";
-    document.getElementById("ordenarAz").style.display = "block";
-   
-} );*/
-
-
+//Esta función nos desplega el menu de los directores completo
 document.getElementById("aFiltro").addEventListener("click", function desplegarMenu() {
     document.getElementById("menuCategorias").style.display ="flex";
 
 } );
 
-
-/*let funcionEjemplo = (colorRecibido, altoRecibido, anchoRecibido, volumenRecibido) => {
-
-    console.log(colorRecibido);
-    
-    let color = colorRecibido;
-    console.log(color);
-    let alto = altoRecibido;
-    console.log(alto);
-    let ancho = anchoRecibido;
-    console.log(ancho);
-    let volumen = volumenRecibido;
-    console.log(volumen);
-
-}
-
-
-funcionEjemplo("azul","1000", "2000", "diez");
-
-let arbolCaracteristicas = (tamañoRecibido, colorRecibido, numeroHojasRecibido) => {
-
-    let tamaño = tamañoRecibido;
-    let color = colorRecibido;
-    let numeroHojas = numeroHojasRecibido;
-    console.log(tamaño, color, numeroHojas);
-}
-
-arbolCaracteristicas("100metros", "azulTurqueza", 18);
-
-let paisesLatinoamerica = (primerPais,segundoPais,tercerPais, cuartoPais) => {
-
-    let pais1 = primerPais;
-    let pais2 = segundoPais;
-    let pais3 = tercerPais;
-    let pais4 = cuartoPais;
-    alert(`${pais1} ${pais2} ${pais3} ${pais4}`);
-}
-paisesLatinoamerica("argentina", "colombia", "brazil", "chile");
-
-//crear una funcion que reciba dos variables o argumentos y por un lado tiene una variable que recibe la data  y por otro lado una que reciba un string con el nombre de director
-//Crear una funciones que musetre 4 paises, con un alert que imprima con la sistasis ecma script 6,  
-
-//crear una funcion q tenga como variable las caracteriticas de un arblo y e imprima un console.log concatenada
-//primer paso: crearnos una variable o  segundo argumento de la funcion
-//segundo paso :asignarle esa variable o rgumento a mi variabl alto
-//tercer paso :darle valor a esa variable o argumeneto cuando llamamos la funcionen la linea 103
-
-
-
-/*for (let i=0; i < menuFiltro.length; i++) {
-    menuFiltro[i].addEventListener("click", function() {
-      if (window.innerWidth < 1024)[
-
-      ]
-    });
-} */
-
-/*document.querySelectorAll(`.menuCategorias`).forEach(element => {
-    element.addEventListener("click", (e) => {
-      //console.log(e.target.menufiltro.menuCategorias);
-      alert("hola");
-    });
-});
-*/
-//función Filter
+//función que le pasamos como argumento el nombre del director en un string que se pasa automaticamente al darle clic.
 
 let cardsPorDirector = (nombreDirectorSeleccionado) => {
     
@@ -115,7 +20,6 @@ let cardsPorDirector = (nombreDirectorSeleccionado) => {
     let filtroDirector = data.films.filter(item => {
 
         if (item.director === nombreDirector){
-            console.log(item.director, item.title, item.rt_score, item.poster)
             stringHtml += ` 
             <div class="card">
                 <div class="top-row background-top-row">
@@ -131,8 +35,6 @@ let cardsPorDirector = (nombreDirectorSeleccionado) => {
         };
     });
     sectionOne.innerHTML = stringHtml;
-    console.log(sectionOne);
-
 };
 
 //Menu desplegable categorias

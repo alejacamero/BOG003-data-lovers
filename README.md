@@ -2,7 +2,7 @@ Data Lovers
 
 SANTUARIO GHILBI
 <br>
--Realizado por Alejandra Camero-
+Realizado por Alejandra Camero
 <br>
 
 

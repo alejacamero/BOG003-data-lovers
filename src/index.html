@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Datalover Studio Ghibli</title>
-    <meta name="viewport" content="width=device-width, user-scable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0"
+    <meta name="viewport" content="width=device-width, user-scable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
@@ -32,18 +32,18 @@
             </ul>
           </div>
           <div id="ordenarAz">
-            <a id="btnOrdenar"href="#">Ordenar A-Z<img src="..//Img/desplegable1.png" alt="desplegar2"></a>
+            <a id="btnOrdenar" href="#">Ordenar A-Z<img src="..//Img/desplegable1.png" alt="desplegar2"></a>
             <ul id="menuDesplegableOrdenar" class="menuDesplegable menuOrdenar">
-              <li><a id="ordenarAscendente" class="letraMenuAlaZ" href="#">Ascendente A-Z</a>
-              <li><a id="OrdenarDescendente" href="#">Descendente Z-A</a>
+              <li><a id="ordenarAscendente" class="letraMenuAlaZ" href="#">Ascendente A-Z</a></li>
+              <li><a id="OrdenarDescendente" href="#">Descendente Z-A</a></li>
             </ul> 
           </div>
 
           <div id="ranking">
-            <a id="botonRanking" href="#">Ranking<img src="..//Img/Star 3Estrella1.png" alt="Etrella ranking"></a>
+            <a id="botonRanking" href="#modalRanking">Ranking<img src="..//Img/Star 3Estrella1.png" alt="Etrella ranking"></a>
             <ul id="menuDesplegableRanking" class="menuDesplegable ranking">
-              <li><a id="rankingCielo" class="rankingMenu" href="#">Cielo</a>
-              <li><a id="rankingTierra" href="#">Tierra</a>
+              <li><a id="rankingCielo" class="rankingMenu" href="#">Cielo</a></li>
+              <li><a id="rankingTierra" href="#">Tierra</a></li>
             </ul>
           </div>
         </nav>
@@ -53,12 +53,13 @@
     <section id="section1" class="section1">
    
     </section>
-    <!--<div class="modalRanking">
+    <!--Ventana modal ranking-->
+   <div id= "modalRanking" class="modalRanking">
       <img  class= "ImagenGataRanking" src="../Img/imagengataranking.png" alt="Imagen gata Ranking">
       <div class="modalCard">
         <p>Encuentra el ranking de las peliculas</p>
         <div class="rankingInterno">
-          <p class="botonCerrar">X</p>
+          <p id="cerrarModal"class="botonCerrar">X</p>
           <div class="cajitaRanking">
             <div class="estrellas"><img class="estrella" src="..//Img/Star 3.png"></div>
             <p class="numeroRanking">+ 90</p>
@@ -74,7 +75,7 @@
         </div> 
       </div>
     </div>
-  </div> -->
+  </div> 
     <footer class="footer">
       <div class="social">
         <div class="icon"><a href="#"><i class="fab fa-facebook fa-lg"></i></a></div>

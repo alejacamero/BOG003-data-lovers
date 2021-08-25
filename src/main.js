@@ -1,4 +1,4 @@
-import data from './data/ghibli/ghibli.js';
+
 import cardsPorDirector, {mostrarTodas, tipoOrden, tipoRanking} from './data.js'
 
 //variable principal en la que estamos metiendo todas las cards.
@@ -85,6 +85,23 @@ document.getElementById("OrdenarDescendente").addEventListener("click", function
     sectionOne.innerHTML = tipoOrden(ordenDescendenteBtn);
     document.getElementById("menuDesplegableOrdenar").style.display ="none";
 } );
+
+
+
+//ventana modal ranking informativa aarece al darle clic al menu desplegar ranking mostrardo el funcionamiento del mismo
+// mostrar modal Ranking
+
+document.getElementById("botonRanking").addEventListener("click", function mostrarVentanaModal(){
+    let mostrarVentana = document.getElementById("modalRanking").style.display ="flex";
+});
+
+//ocultar modal Ranking
+
+document.getElementById("modalRanking").addEventListener("click", function ocultarVentanaModal(){
+    let ocultarVentana = document.getElementById("modalRanking").innerHTML;
+    document.getElementById("modalRanking").style.display ="none";
+});
+
 
 //desplegar menu Ranking
 

@@ -14,7 +14,8 @@ Es Uno de los mejores estudios de animación de todos los tiempos, fundado en 19
 Santuario Ghilbi es una interfaz creada para los conocedores y amantes  de STUDIO GHILBI en donde le brindamos  la posibilidad de encontrar informacíon maravillosa y util, el  diseño acorde con la paleta de color que manejan en el Studio y algunos de los personajes caracteristicos como recursos visuales.
 
 En esta pagina web podran encontrar los  directores y las peliculas que dirigio cada uno de ellos con su respectivo poster y ranking.
-Los usuaios podran filtrar las peliculas por su director, ordenarlas en forma ascendente y descendente y finalmene obtener el ranking de clasificado en cielo / Tierra, donde destacaran las mejores peliculas.
+Los usuaios podran filtrar las peliculas por su director, ordenarlas en forma ascendente y descendente y finalmente obtener el ranking de clasificado en cielo / Tierra, donde destacaran las mejores peliculas.
+
 Cuenta con un diseño  responsive  (creada desde  un diseño Mobile First)  para ser utilizada en diferentes dispositivos (celular, tablet y PC),
 
 3.Historias de usuario
@@ -153,12 +154,6 @@ Definición de terminado:
 4. El código tiene y pasa los test necesarios
 5. El producto debe ser responsive.
 
-Actividad
-
-
-Actividad
-
-Actividad
 
 
 4.Diseño de la Interfaz de Usuario
@@ -170,12 +165,18 @@ Actividad
 
 - Prototipo de alta fidelidad:
 
-Figma es la herramienta diseño visual utilizada para realizar el prototipo de alta fidelidad en donde seguimos los fundamentos de _visual design_
+Figma es la herramienta diseño visual utilizada para realizar el prototipo Mobile First de alta fidelidad en donde seguimos los fundamentos de _visual design_
 link Imagenes
 
 5.test de usabilidad
 
- Cuéntanos
-qué problemas de usabilidad detectaste a través de los _tests_ y cómo los
-mejoraste en tu propuesta final.
+Al mostrar la aplicación o interfaz a los usuarios solicitaron los siguientes cambios al prototipo inicial :
+
+Crear un botón que muestre todas las películas.
+El Color del header y el footer debe ser mas suave
+3.Usar un menú desplegable es visualmente mas armónico
+El menú no debe tener tanta transparencia por que no se ve clara la información
+Responsive en mobile debe mejorar en cuanto a el tamaño de las tarjetas y la presentación de las mismas
+
+Se analizaron y realizamos los cambios solicitados por los usuarios para mejorar su experiencia.
 

@@ -22,7 +22,7 @@ body {
   background-color: #20dad8b3;
   opacity: 0.7;
   padding: 12px 0px 9px 0px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .menu {
   display: flex;
@@ -92,14 +92,6 @@ body {
   display: inline-block;
   display: flex;
 }
-
-/*.nav > div > a {
-  display: block;
-  padding: 15px 20px;
-  color: #ffffff;
-  text-decoration: none;
-
-}*/
 
 .nav  div a {
   color: #ffffff;
@@ -180,15 +172,6 @@ body {
   font-size: 15px;
 }
 
-/*.menuDesplegable li a {
-  display: block;
-  padding: 15px;
-  color: #ffffff;
-  text-decoration: none;
-  list-style: none;
-
-}*/
-
 .nav li:hover .menuDesplegable {
   display: block;
 
@@ -199,7 +182,7 @@ body {
   display:inline-block;
   padding: 0.5em 1em;
   border: 0.16em solid #20dad857;
-  margin: -9px 0.3em 1.3em 4px;
+  margin: 5px 0.3em 0.6em 5px;
   box-sizing: border-box;
   text-decoration:none;
   font-weight:400;
@@ -207,7 +190,17 @@ body {
   letter-spacing: 1px;
 }
 
-
+/*.btn-CargarMas {
+  display:inline-block;
+  padding: 0.5em 1em;
+  border: 0.16em solid #20dad857;
+  margin: 5px 0.3em 1.6em 5px;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-weight:400;
+  color: #0000009f;
+  letter-spacing: 1px;
+}*/
 
 
 .section1 {
@@ -322,18 +315,6 @@ h3 {
   justify-content: center;
 }
 
-/*.modalRanking {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 1rem 1rem 4rem 50px rgb(240 232 118 / 86%);
-  flex-direction: column;
-  border-radius: 20px;
-  width: 350px;
-  height: 180px;
-  position: relative;
-
-}*/
 
 .modalRanking {
   display: none;
@@ -345,8 +326,6 @@ h3 {
   height: 180px;
   position: relative;
 }
-
-
 
 .modalCard {
   background-color: #ffffff7e;

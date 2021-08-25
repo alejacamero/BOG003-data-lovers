@@ -165,7 +165,8 @@ Definición de terminado:
 
 - Prototipo de alta fidelidad:
 
-Figma es la herramienta diseño visual utilizada para realizar el prototipo Mobile First de alta fidelidad en donde seguimos los fundamentos de _visual design_
+Figma es la herramienta diseño visual utilizada para realizar el prototipo Mobile First de alta fidelidad en donde seguimos los fundamentos de visual design
+
 link Imagenes
 
 5.test de usabilidad

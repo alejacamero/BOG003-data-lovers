@@ -18,7 +18,30 @@ Los usuaios podran filtrar las peliculas por su director, ordenarlas en forma as
 
 Cuenta con un diseño  responsive  (creada desde  un diseño Mobile First)  para ser utilizada en diferentes dispositivos (celular, tablet y PC),
 
-3.Historias de usuario
+4 Investigación  Historias de Usuario
+
+Se realizo una entrevista a 5 personas que han visto, les gusta o conocen de Studio Ghibli teniendo en cuenta estos aspectos:
+
+¿Quiénes son los principales usuarios de producto?
+¿Cuáles son los objetivos de estos usuarios en relación con el producto?
+¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
+¿Cuándo utilizan o utilizarían el producto?
+
+Con ellas se pudo evidenciar :
+
+-La importancia de utilizar una paleta de colores que identifique a Studio Ghibli.
+-Utilizar un personaje principal en las tarjetas Modal diferente a Totoro para darle relevancia a otros personajes.
+-Utilizar una imagen fan Art de los personajes.
+-Se debe filtrar por director ya que como seguidor de Studio Ghibli casi siempre se escucha solo un nombre famoso y conocido y del resto de los -directores no se conoce mucho.
+-Les interesa que se puedan ordenar las películas de la A a la Z es decir orden Ascendente y Descendente.
+-Que sea amigable o interactiva para eso usamos una tarjeta modal.
+-Que los nombre de los directores tenga un link donde los envié a una pagina que hable de cada uno de ellos.
+-Que el ranking sea divertido y entretenido para esto creamos dos categorías Cielo e Infierno con valores con los que el usuario puede evidenciar las mejor rankeadas
+-Las tarjetas con los poster de las películas visualmente se puedan detallar y ver su director, nombre y ranking.
+
+
+
+5.Historias de usuario
 
 Se realizaron 5 historias de usuario inicialmente, 4 de las 5 estan activas, terminadas y ejecutadas en la interfaz
 

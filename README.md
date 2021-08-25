@@ -1,7 +1,9 @@
 Data Lovers
 
 SANTUARIO GHILBI
-Realizado por Alejandra Camero
+<br>
+-Realizado por Alejandra Camero-
+<br>
 
 
 1.Preambulo - Studio Ghibli
@@ -18,6 +20,8 @@ Los usuaios podran filtrar las peliculas por su director, ordenarlas en forma as
 finalmente cuenta con un diseño  responsive  (creada desde  un diseño Mobile First)  para ser utilizada en diferentes dispositivos (celular, tablet y PC),
 
 3.Historias de usuario
+
+Se realizaron 5 historias de usuario inicialmente, 4 de las 5 estan activas, terminadas y ejecutadas en la interfaz
 
 
 4.Diseño de la Interfaz de Usuario

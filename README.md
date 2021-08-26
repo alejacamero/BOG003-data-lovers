@@ -224,13 +224,19 @@ Tarjetas Peliculas
  
 Responsive Desing
 
+---
+
 ![](https://i.imgur.com/MuN0eE9.png)
+
+---
 
 ![](https://i.imgur.com/y4pJYGg.png)
 
+---
 
  ![](https://i.imgur.com/EKbuaZD.png)
 
+---
 
 ## Test de usabilidad
 
@@ -243,3 +249,4 @@ Al mostrar la aplicación o interfaz a los usuarios solicitaron los siguientes c
 * Responsive en mobile debe mejorar en cuanto a el tamaño de las tarjetas y la presentación de las mismas
 
 #### Realizamos los cambios solicitados por los usuarios para mejorar su experiencia 
+---

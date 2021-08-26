@@ -14,8 +14,13 @@ document.getElementById("mostrarTodas").addEventListener("click", function despl
 //Esta función nos desplega el menu de los directores completo
 document.getElementById("aFiltro").addEventListener("click", function desplegarMenu() {
     document.getElementById("menuCategorias").style.display ="flex";
+    document.getElementById("menuDesplegableOrdenar").style.display ="none";
+    document.getElementById("menuDesplegableRanking").style.display ="none";
 
 });
+
+//Ocultar menu filtro
+
 
 
 //categorias del Menu desplegable 
@@ -68,7 +73,11 @@ document.getElementById("YoshifumiKondō").addEventListener("click", function de
 
 document.getElementById("btnOrdenar").addEventListener("click", function desplegarOrdenar() {
    document.getElementById("menuDesplegableOrdenar").style.display ="flex";
-} );
+   /*document.getElementById("menuDesplegableOrdenar").style.display ="none";*/
+   document.getElementById("menuCategorias").style.display ="none";
+   document.getElementById("modalRanking").style.display ="none";
+
+});
 
 //desplegar AZ
 document.getElementById("ordenarAscendente").addEventListener("click", function menuDesplegableOrdenar(){
@@ -89,16 +98,16 @@ document.getElementById("OrdenarDescendente").addEventListener("click", function
 
 
 //ventana modal ranking informativa aarece al darle clic al menu desplegar ranking mostrardo el funcionamiento del mismo
+
 // mostrar modal Ranking
 
 document.getElementById("botonRanking").addEventListener("click", function mostrarVentanaModal(){
-    let mostrarVentana = document.getElementById("modalRanking").style.display ="flex";
+    document.getElementById("modalRanking").style.display ="flex";
 });
 
 //ocultar modal Ranking
 
 document.getElementById("modalRanking").addEventListener("click", function ocultarVentanaModal(){
-    let ocultarVentana = document.getElementById("modalRanking").innerHTML;
     document.getElementById("modalRanking").style.display ="none";
 });
 
@@ -107,6 +116,7 @@ document.getElementById("modalRanking").addEventListener("click", function ocult
 
 document.getElementById("botonRanking").addEventListener("click", function menuDesplegarRanking(){
   document.getElementById("menuDesplegableRanking").style.display ="flex";
+  document.getElementById("menuDesplegableOrdenar").style.display ="none";
 });
 
 //desplegar Cielo

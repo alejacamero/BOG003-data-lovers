@@ -14,6 +14,7 @@ body {
   overflow-x: hidden;
   height: auto;
   overflow: auto;
+  position: relative;
 }
 
 
@@ -324,7 +325,10 @@ h3 {
   padding: 10px;
   width: 350px;
   height: 180px;
-  position: relative;
+  position: absolute;
+  top: 25%;
+  left: 39%;
+
 }
 
 .modalCard {

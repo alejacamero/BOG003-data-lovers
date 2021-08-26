@@ -1,16 +1,16 @@
-Data Lovers
+# Data Lovers
 
-SANTUARIO GHILBI
-<br>
-Realizado por Alejandra Camero
-<br>
-<br>
+# SANTUARIO GHILBI
 
-1. Preambulo - Studio Ghibli
+### Realizado por Alejandra Camero
+
+
+
+## Preambulo - Studio Ghibli
 
 Es Uno de los mejores estudios de animación de todos los tiempos, fundado en 1985  por el legendario Hayao Miyazaki y Isao Takahata a día de hoy, han realizado más de 20 películas, además de otras clases de trabajos como por ejemplo cortometrajes y anuncios publicitarios entre otros.
 
-2. Resumen del proyecto
+##  Resumen del proyecto
 
 Santuario Ghilbi es una interfaz creada para los conocedores y amantes  de STUDIO GHILBI en donde le brindamos  la posibilidad de encontrar informacíon maravillosa y util, el  diseño acorde con la paleta de color que manejan en el Studio y algunos de los personajes caracteristicos como recursos visuales.
 
@@ -19,7 +19,7 @@ Los usuaios podran filtrar las peliculas por su director, ordenarlas en forma as
 
 Cuenta con un diseño  responsive  (creada desde  un diseño Mobile First)  para ser utilizada en diferentes dispositivos (celular, tablet y PC),
 
-3. Investigación  Historias de Usuario
+##  Investigación  Historias de Usuario
 
 Se realizo una entrevista a 5 personas que han visto, les gusta o conocen de Studio Ghibli teniendo en cuenta estos aspectos:
 
@@ -42,7 +42,7 @@ Con ellas se pudo evidenciar :
 
 
 
-4. Historias de usuario
+##  Historias de usuario
 
 Se realizaron 5 historias de usuario inicialmente, 4 de las 5 estan activas, terminadas y ejecutadas en la interfaz
 
@@ -180,7 +180,7 @@ Definición de terminado:
 
 
 
-4.Diseño de la Interfaz de Usuario
+## Diseño de la Interfaz de Usuario
 
 - Prototipo de baja fidelidad:
 

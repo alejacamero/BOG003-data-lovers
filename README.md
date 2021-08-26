@@ -201,14 +201,16 @@ Figma es la herramienta diseño visual utilizada para realizar el prototipo Mobi
 
  * Prototipo mobile desing responsive
 
-![](https://i.imgur.com/zbkPGhZ.png)           ![](https://i.imgur.com/2Nrb0cy.png)  
+![](https://i.imgur.com/2SyegPH.png)
 
+![](https://i.imgur.com/piPjnhG.png)
 
+![](https://i.imgur.com/WXia0Gc.png)
 
-![](https://i.imgur.com/ANKZMhO.png)           ![](https://i.imgur.com/NW9Rw2l.png)  
+![](https://i.imgur.com/a92GcIt.png)
 
+![](https://i.imgur.com/McUJwig.png)
 
-![](https://i.imgur.com/oP1y3NC.png)           ![](https://i.imgur.com/ar1Udo7.png)
 
 ## Diseño de la Interfaz de Usuario
 

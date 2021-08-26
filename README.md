@@ -186,7 +186,17 @@ Definición de terminado
     El código tiene y pasa los test necesarios
     El producto debe ser responsive
 
+### Prototipo de alta fidelidad
 
+Figma es la herramienta diseño visual utilizada para realizar el prototipo Mobile First de alta fidelidad en donde seguimos los fundamentos de visual design
+
+![](https://i.imgur.com/zbkPGhZ.png)           ![](https://i.imgur.com/2Nrb0cy.png)  
+
+
+![](https://i.imgur.com/ANKZMhO.png)           ![](https://i.imgur.com/NW9Rw2l.png)  
+
+
+![](https://i.imgur.com/oP1y3NC.png)           ![](https://i.imgur.com/ar1Udo7.png)
 
 ## Diseño de la Interfaz de Usuario
  
@@ -199,19 +209,6 @@ Definición de terminado
 
  ![](https://i.imgur.com/EKbuaZD.png)
 
-
-
-### Prototipo de alta fidelidad:
-
-Figma es la herramienta diseño visual utilizada para realizar el prototipo Mobile First de alta fidelidad en donde seguimos los fundamentos de visual design
-
-![](https://i.imgur.com/zbkPGhZ.png)           ![](https://i.imgur.com/2Nrb0cy.png)  
-
-
-![](https://i.imgur.com/ANKZMhO.png)           ![](https://i.imgur.com/NW9Rw2l.png)  
-
-
-![](https://i.imgur.com/oP1y3NC.png)           ![](https://i.imgur.com/ar1Udo7.png)
 
 
 ## Test de usabilidad

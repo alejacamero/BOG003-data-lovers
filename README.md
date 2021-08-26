@@ -2,33 +2,43 @@
 
 # SANTUARIO GHILBI
 
-### Realizado por Alejandra Camero
+#### Realizado por Alejandra Camero
 
-
+---
+---
 
 ## Preambulo - Studio Ghibli
+---
 
 Es uno de los mejores estudios de animación de todos los tiempos, fundado en 1985  por el legendario Hayao Miyazaki y Isao Takahata a día de hoy, han realizado más de 20 películas, además de otras clases de trabajos como por ejemplo cortometrajes y anuncios publicitarios entre otros
-
+---
 ##  Resumen del proyecto
-
+---
 Santuario Ghilbi es una interfaz creada para los conocedores y amantes  de STUDIO GHILBI en donde le brindamos  la posibilidad de encontrar informacíon maravillosa y util, el  diseño acorde con la paleta de color que manejan en el Studio y algunos de los personajes caracteristicos como recursos visuales
 
 Logo
 
 ![](https://i.imgur.com/0j3fvEq.png)
 
+---
+
 Paleta de colores
 
 ![](https://i.imgur.com/h1AzVKn.png)
+
+---
 
 Personajes
 
 ![](https://i.imgur.com/w1wKlZ1.png)
 
+---
+
 Modal Personaje
 
 ![](https://i.imgur.com/iWViz0y.png)
+
+---
 
 
 
@@ -37,6 +47,7 @@ Modal Personaje
 
 * El diseño  responsive  (creada desde  un diseño Mobile First)  para ser utilizada en diferentes dispositivos (celular, tablet y PC)
 
+---
 ##  Investigación  Historias de Usuario
 
 Se realizo una entrevista a 5 personas que han visto, les gusta o conocen de Studio Ghibli teniendo en cuenta estos aspectos
@@ -59,7 +70,7 @@ Con ellas se pudo evidenciar
 9. Que el ranking sea divertido y entretenido para esto creamos dos categorías Cielo e Infierno con valores con los que el usuario puede evidenciar las mejor rankeadas
 10. Las tarjetas con los poster de las películas visualmente se puedan detallar y ver su director, nombre y ranking
 
-
+---
 
 ##  Historias de usuario
 
@@ -198,6 +209,7 @@ Definición de terminado
 
 Figma es la herramienta diseño visual utilizada para realizar el prototipo Mobile First de alta fidelidad en donde seguimos los fundamentos de visual design
 
+---
 
  * Prototipo mobile desing responsive
 
@@ -210,6 +222,9 @@ Figma es la herramienta diseño visual utilizada para realizar el prototipo Mobi
 ![](https://i.imgur.com/a92GcIt.png)
 
 ![](https://i.imgur.com/McUJwig.png)
+
+---
+
 
 
 ## Diseño de la Interfaz de Usuario
@@ -249,4 +264,5 @@ Al mostrar la aplicación o interfaz a los usuarios solicitaron los siguientes c
 * Responsive en mobile debe mejorar en cuanto a el tamaño de las tarjetas y la presentación de las mismas
 
 #### Realizamos los cambios solicitados por los usuarios para mejorar su experiencia 
+---
 ---

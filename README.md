@@ -14,11 +14,19 @@ Es uno de los mejores estudios de animación de todos los tiempos, fundado en 19
 
 Santuario Ghilbi es una interfaz creada para los conocedores y amantes  de STUDIO GHILBI en donde le brindamos  la posibilidad de encontrar informacíon maravillosa y util, el  diseño acorde con la paleta de color que manejan en el Studio y algunos de los personajes caracteristicos como recursos visuales
 
+Logo
+
 ![](https://i.imgur.com/0j3fvEq.png)
+
+Paleta de colores
 
 ![](https://i.imgur.com/h1AzVKn.png)
 
+Personajes
+
 ![](https://i.imgur.com/w1wKlZ1.png)
+
+Modal Personaje
 
 ![](https://i.imgur.com/iWViz0y.png)
 
@@ -190,7 +198,11 @@ Definición de terminado
 
 Figma es la herramienta diseño visual utilizada para realizar el prototipo Mobile First de alta fidelidad en donde seguimos los fundamentos de visual design
 
+
+ * Prototipo mobile desing responsive
+
 ![](https://i.imgur.com/zbkPGhZ.png)           ![](https://i.imgur.com/2Nrb0cy.png)  
+
 
 
 ![](https://i.imgur.com/ANKZMhO.png)           ![](https://i.imgur.com/NW9Rw2l.png)  
@@ -225,4 +237,4 @@ Al mostrar la aplicación o interfaz a los usuarios solicitaron los siguientes c
 * El menú no debe tener tanta transparencia por que no se ve clara la información
 * Responsive en mobile debe mejorar en cuanto a el tamaño de las tarjetas y la presentación de las mismas
 
-#### Se analizo y realizamos los cambios solicitados por los usuarios para mejorar su experiencia 
+#### Realizamos los cambios solicitados por los usuarios para mejorar su experiencia 

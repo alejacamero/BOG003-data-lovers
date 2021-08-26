@@ -236,21 +236,27 @@ Menu Desplegable Color final
 Tarjetas Peliculas
 
 ![](https://i.imgur.com/aipDKKx.png)
+
+---
  
 Responsive Desing
 
 ---
 
+Mobile
+
 ![](https://i.imgur.com/MuN0eE9.png)
 
 ---
-
+Tablet
 ![](https://i.imgur.com/y4pJYGg.png)
 
 ---
+Destop
 
  ![](https://i.imgur.com/EKbuaZD.png)
 
+---
 ---
 
 ## Test de usabilidad

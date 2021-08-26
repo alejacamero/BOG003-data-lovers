@@ -229,11 +229,11 @@ Figma es la herramienta diseño visual utilizada para realizar el prototipo Mobi
 
 ## Diseño de la Interfaz de Usuario
 
-Menu Desplegable Color final
+Menú Desplegable Color final
 
 ![](https://i.imgur.com/1fL2ksR.png)  ![](https://i.imgur.com/Tq2B9cE.png) ![](https://i.imgur.com/oSID11B.png)
 
-Tarjetas Peliculas
+Card Películas
 
 ![](https://i.imgur.com/aipDKKx.png)
 
@@ -249,6 +249,8 @@ Mobile
 
 ---
 Tablet
+
+
 ![](https://i.imgur.com/y4pJYGg.png)
 
 ---

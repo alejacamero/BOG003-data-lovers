@@ -14,14 +14,15 @@ Es uno de los mejores estudios de animación de todos los tiempos, fundado en 19
 
 Santuario Ghilbi es una interfaz creada para los conocedores y amantes  de STUDIO GHILBI en donde le brindamos  la posibilidad de encontrar informacíon maravillosa y util, el  diseño acorde con la paleta de color que manejan en el Studio y algunos de los personajes caracteristicos como recursos visuales
 
-![](https://i.imgur.com/WgrvXla.png)
+![](https://i.imgur.com/0j3fvEq.png)
+
+![](https://i.imgur.com/h1AzVKn.png)
 
 ![](https://i.imgur.com/w1wKlZ1.png)
-  
+
 ![](https://i.imgur.com/iWViz0y.png)
 
 
-![](https://i.imgur.com/h1AzVKn.png)
 
 * En esta pagina web podran encontrar los  directores y las peliculas que dirigio cada uno de ellos con su respectivo poster y ranking.
 * Los usuaios podran filtrar las peliculas por su director, ordenarlas en forma ascendente y descendente y finalmente obtener el ranking   clasificado en cielo / Tierra, donde destacaran las mejores peliculas
@@ -198,6 +199,10 @@ Figma es la herramienta diseño visual utilizada para realizar el prototipo Mobi
 ![](https://i.imgur.com/oP1y3NC.png)           ![](https://i.imgur.com/ar1Udo7.png)
 
 ## Diseño de la Interfaz de Usuario
+
+Menu Desplegable Color final
+
+![](https://i.imgur.com/1fL2ksR.png)  ![](https://i.imgur.com/Tq2B9cE.png) ![](https://i.imgur.com/oSID11B.png)
  
  Responsive Desing
 

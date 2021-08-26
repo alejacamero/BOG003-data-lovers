@@ -217,8 +217,12 @@ Figma es la herramienta diseño visual utilizada para realizar el prototipo Mobi
 Menu Desplegable Color final
 
 ![](https://i.imgur.com/1fL2ksR.png)  ![](https://i.imgur.com/Tq2B9cE.png) ![](https://i.imgur.com/oSID11B.png)
+
+Tarjetas Peliculas
+
+![](https://i.imgur.com/aipDKKx.png)
  
- Responsive Desing
+Responsive Desing
 
 ![](https://i.imgur.com/MuN0eE9.png)
 
@@ -226,7 +230,6 @@ Menu Desplegable Color final
 
 
  ![](https://i.imgur.com/EKbuaZD.png)
-
 
 
 ## Test de usabilidad

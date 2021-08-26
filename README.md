@@ -14,6 +14,16 @@ Es uno de los mejores estudios de animación de todos los tiempos, fundado en 19
 
 Santuario Ghilbi es una interfaz creada para los conocedores y amantes  de STUDIO GHILBI en donde le brindamos  la posibilidad de encontrar informacíon maravillosa y util, el  diseño acorde con la paleta de color que manejan en el Studio y algunos de los personajes caracteristicos como recursos visuales
 
+
+![](https://i.imgur.com/t1rAEwF.png)
+
+![](https://i.imgur.com/w1wKlZ1.png)
+  
+![](https://i.imgur.com/iWViz0y.png)
+
+
+![](https://i.imgur.com/5WiRjHa.png) 
+
 * En esta pagina web podran encontrar los  directores y las peliculas que dirigio cada uno de ellos con su respectivo poster y ranking.
 * Los usuaios podran filtrar las peliculas por su director, ordenarlas en forma ascendente y descendente y finalmente obtener el ranking   clasificado en cielo / Tierra, donde destacaran las mejores peliculas
 
@@ -179,17 +189,30 @@ Definición de terminado
 
 
 ## Diseño de la Interfaz de Usuario
+ 
+ Responsive Desing
 
-### Prototipo de baja fidelidad:
+![](https://i.imgur.com/MuN0eE9.png)
 
- Bocetos -sketches- usando papel y lápiz
- link Imagenes
+![](https://i.imgur.com/y4pJYGg.png)
+
+
+ ![](https://i.imgur.com/EKbuaZD.png)
+
+
 
 ### Prototipo de alta fidelidad:
 
 Figma es la herramienta diseño visual utilizada para realizar el prototipo Mobile First de alta fidelidad en donde seguimos los fundamentos de visual design
 
-link Imagenes
+![](https://i.imgur.com/zbkPGhZ.png)           ![](https://i.imgur.com/2Nrb0cy.png)  
+
+
+![](https://i.imgur.com/ANKZMhO.png)           ![](https://i.imgur.com/NW9Rw2l.png)  
+
+
+![](https://i.imgur.com/oP1y3NC.png)           ![](https://i.imgur.com/ar1Udo7.png)
+
 
 ## Test de usabilidad
 
@@ -201,5 +224,4 @@ Al mostrar la aplicación o interfaz a los usuarios solicitaron los siguientes c
 * El menú no debe tener tanta transparencia por que no se ve clara la información
 * Responsive en mobile debe mejorar en cuanto a el tamaño de las tarjetas y la presentación de las mismas
 
-## Se analizaron y realizamos los cambios solicitados por los usuarios para mejorar su experiencia
-
+#### Se analizo y realizamos los cambios solicitados por los usuarios para mejorar su experiencia 

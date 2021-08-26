@@ -14,15 +14,14 @@ Es uno de los mejores estudios de animación de todos los tiempos, fundado en 19
 
 Santuario Ghilbi es una interfaz creada para los conocedores y amantes  de STUDIO GHILBI en donde le brindamos  la posibilidad de encontrar informacíon maravillosa y util, el  diseño acorde con la paleta de color que manejan en el Studio y algunos de los personajes caracteristicos como recursos visuales
 
-
-![](https://i.imgur.com/t1rAEwF.png)
+![](https://i.imgur.com/WgrvXla.png)
 
 ![](https://i.imgur.com/w1wKlZ1.png)
   
 ![](https://i.imgur.com/iWViz0y.png)
 
 
-![](https://i.imgur.com/5WiRjHa.png) 
+![](https://i.imgur.com/h1AzVKn.png)
 
 * En esta pagina web podran encontrar los  directores y las peliculas que dirigio cada uno de ellos con su respectivo poster y ranking.
 * Los usuaios podran filtrar las peliculas por su director, ordenarlas en forma ascendente y descendente y finalmente obtener el ranking   clasificado en cielo / Tierra, donde destacaran las mejores peliculas

@@ -1,4 +1,5 @@
 import data from './data/ghibli/ghibli.js';
+import {tarjeta} from './main.js';
 
 //función que le pasamos como argumento el nombre del director en un string que se pasa automaticamente al darle clic.
 
@@ -8,104 +9,49 @@ const cardsPorDirector = (nombreDirectorSeleccionado) => {
   let stringHtml = ""; 
  //data.films tiene por dentro un array con varios objetos
   data.films.filter(item => {
-  
-      if (item.director === nombreDirector){
-          stringHtml += tarjeta(item)
-          /*+= ` 
-          /* <div class="card">
-              <div class="top-row background-top-row">
-                  <h4>${item.title}</h4>
-              </div>
-              <img  class= "posterPelicula" src="${item.poster}" alt="Imagen ${item.title}">
-              <div class="content">
-                  <h3>${item.director}</h3>
-                  <h3>Ranking ${item.rt_score}</h3>
-              <!-- <button class="button background-top-row">Empezar</button> -->
-              </div>
-          </div>`;  */
-      }
+    if (item.director === nombreDirector){
+      stringHtml += tarjeta(item)
+    }
   });
   return stringHtml;
 };
 
 //funcion card peliculas
 
-const tarjeta = (pelicula) => {
 
- return  ` 
- <div class="card">
-     <div class="top-row background-top-row">
-         <h4>${pelicula.title}</h4>
-     </div>
-     <img  class= "posterPelicula" src="${pelicula.poster}" alt="Imagen ${pelicula.title}">
-     <div class="content">
-         <h3>${pelicula.director}</h3>
-         <h3>Ranking ${pelicula.rt_score}</h3>
-     <!-- <button class="button background-top-row">Empezar</button> -->
-     </div>
- </div>`;
-
-}
 export const mostrarTodas = () => {
   let stringHtml2 = "";
   data.films.map(item => {
-      stringHtml2 += tarjeta(item)
-      /*+= ` 
-      <div class="card">
-          <div class="top-row background-top-row">
-              <h4>${item.title}</h4>
-          </div>
-          <img  class= "posterPelicula" src="${item.poster}" alt="Imagen ${item.title}">
-          <div class="content">
-              <h3>${item.director}</h3>
-              <h3>Ranking ${item.rt_score}</h3>
-          <!-- <button class="button background-top-row">Empezar</button> -->
-          </div>
-      </div>`;  */
+    stringHtml2 += tarjeta(item)
   });
-  //sectionOne.innerHTML = stringHtml2;
   return stringHtml2;
 };
 
 //returnArray es una función que representa el arrglo en donde tenemos dos condiciones dependiendo de lo que queremos q haga
+
 export const tipoOrden = (tipoDeOrdenamiento) => {
   let tipoOrden = tipoDeOrdenamiento;
   let returnArray = () => {
-      let arrayTitles = data.films.map(item => {
-          let titulo = item.title;
-          return titulo;
-      });
-      if (tipoOrden === "Ascendente A-Z"){
-          return arrayTitles.sort();
-      }  else if (tipoOrden === "Descendente Z-A"){
-          return arrayTitles.reverse();
-      }
+    let arrayTitles = data.films.map(item => {
+    let titulo = item.title;
+      return titulo;
+    });
+    if (tipoOrden === "Ascendente A-Z"){
+      return arrayTitles.sort();
+    }  else if (tipoOrden === "Descendente Z-A"){
+      return arrayTitles.reverse();
+    }
 
   };
+
   let stringSortHtml = "";
   returnArray().map(title => {
-
     let filmTitle = title;
-
-    data.films.filter(data => {
-      if (data.title === filmTitle){
-        stringSortHtml += ` 
-        <div class="card">
-            <div class="top-row background-top-row">
-                <h4>${data.title}</h4>
-            </div>
-            <img  class= "posterPelicula" src="${data.poster}" alt="Imagen ${data.title}">
-            <div class="content">
-                <h3>${data.director}</h3>
-                <h3>Ranking ${data.rt_score}</h3>
-            <!-- <button class="button background-top-row">Empezar</button> -->
-            </div>
-        </div>`;
-      
-      }
-        
+    data.films.filter(item => {
+      if (item.title === filmTitle){
+        stringSortHtml += tarjeta(item)
+      } 
     });
-
   });
   return stringSortHtml;
 
@@ -124,23 +70,10 @@ export const tipoRanking = (tipoRanking) => {
       let arrayTierra = data.films.filter(film => Number(film.rt_score)  < 90); 
       return arrayTierra;
     }
-  
   };
-
   let stringHtmlRanking = "";
   returnRankingArray().map(film => {
-    stringHtmlRanking +=  ` 
-    <div class="card">
-        <div class="top-row background-top-row">
-            <h4>${film.title}</h4>
-        </div>
-        <img  class= "posterPelicula" src="${film.poster}" alt="Imagen ${film.title}">
-        <div class="content">
-            <h3>${film.director}</h3>
-            <h3>Ranking ${film.rt_score}</h3>
-        <!-- <button class="button background-top-row">Empezar</button> -->
-        </div>
-    </div>`;
+    stringHtmlRanking +=  tarjeta(film)
   });
   return stringHtmlRanking;
 };

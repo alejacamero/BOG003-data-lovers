@@ -6,15 +6,14 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
   font-family: 'Inter', sans-serif;
-
 }
 
 body {
   width: 100%;
   overflow-x: hidden;
   height: auto;
-  overflow: auto;
   position: relative;
+
 }
 
 
@@ -25,6 +24,7 @@ body {
   padding: 12px 0px 9px 0px;
   margin-bottom: 5px;
 }
+
 .menu {
   display: flex;
   flex-direction:column;
@@ -48,7 +48,7 @@ body {
   font-size: 65px;
   align-content: flex-start;
   letter-spacing: 1pt;
-  padding-top: 25px;
+  padding-top: 16px;
   text-shadow: #20dad8 2px 2px 4px;
 }
 
@@ -56,12 +56,12 @@ body {
 .nav {
   width: 100%;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 17px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-end;
-  height: 52px;
+  height: 61px;
   padding-right: 10px;
 }
 
@@ -83,8 +83,9 @@ body {
   font-weight: 400;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   display: flex;
-  letter-spacing: 0.9px;
+  letter-spacing: 0.8px;
 }
 
 
@@ -102,8 +103,6 @@ body {
   text-decoration: none;
   position: relative;
   display: inline-block;
-
-
 }
 
 /*menu desplegable directores*/
@@ -111,19 +110,19 @@ body {
 .menuDesplegable {
   position: absolute;
   top: 27px;
-  left: -17px;
+  left: -8px;
   background: #f96160c4;
   opacity: 17.6;
-  width: 171px;
+  width: 179px;
   list-style: none;
   display: none;    
   flex-direction: column;
   align-items: center;
   box-shadow: 2px 13px 16px rgb(52 3 45 / 27%);
   overflow-x: hidden;
-  z-index: -1;
   border: none;
   outline: none;
+  z-index: 10;
 
 }
 
@@ -133,14 +132,15 @@ body {
 
 .menuOrdenar {
   position: absolute;
-  top: 27px;
-  left: -17px;
+  top: 26px;
+  left: -9px;
   background: #F2EEC1;
+  width: 115%;
 }
 
 .menuOrdenar li a {
   color: #20DAD8;
-  font-weight: 10000;
+  font-weight: 400;
   text-decoration:none;
   margin-right: 10px;
   
@@ -149,9 +149,10 @@ body {
 .ranking {
   position: absolute;
   top: 27px;
-  left: -17px;
+  left: -11px;
   background: #959DCF;
   opacity: 17.6;
+  width: 133%;
 }
 
 .ranking li a {
@@ -159,15 +160,13 @@ body {
   font-weight: 900px;
   text-decoration:none;
   margin-right: 10px;
-
-
 }
 
 .nav li {
-  padding: 20px 10px 20px 10px;
+  padding: 11px 27px 16px 26px;
   border-top: #ffffff;
   border-bottom: #ffffff;
-  border-width: 1px;
+  border-width: 0.8px;
   width: 100%;
   border-style: solid;
   font-size: 15px;
@@ -175,33 +174,24 @@ body {
 
 .nav li:hover .menuDesplegable {
   display: block;
-
 }
 
 
 .btn-mostrarTodas {
-  display:inline-block;
-  padding: 0.5em 1em;
-  border: 0.16em solid #20dad857;
-  margin: 5px 0.3em 0.6em 5px;
+  display: inline-block;
+  position: absolute;
+  left: 39%;
+  top: 9.8%;
+  padding: 0.2em 0.5em;
+  border: 0.16em solid #f2eec199;
+  margin: 7px 0.3em 0.6em 0px;
   box-sizing: border-box;
-  text-decoration:none;
-  font-weight:400;
-  color: #0000009f;
+  text-decoration: none;
+  font-weight: 200;
+  color: #ffffff;
   letter-spacing: 1px;
+  border-radius: 51px;
 }
-
-/*.btn-CargarMas {
-  display:inline-block;
-  padding: 0.5em 1em;
-  border: 0.16em solid #20dad857;
-  margin: 5px 0.3em 1.6em 5px;
-  box-sizing: border-box;
-  text-decoration:none;
-  font-weight:400;
-  color: #0000009f;
-  letter-spacing: 1px;
-}*/
 
 
 .section1 {
@@ -211,7 +201,11 @@ body {
   flex-flow: row wrap;
   align-items: space-around;
   justify-content: space-evenly;
-  height: 990px;
+  height: 794px;
+  gap: 30px;
+  overflow-y: scroll;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .footer {
@@ -246,7 +240,6 @@ i {
 }
 
 .background-top-row {
-  /*background-color: rgba(52, 3, 45, 0.3);*/
   backdrop-filter:blur(.4rem);
 }
 
@@ -266,9 +259,8 @@ i {
   align-items: center;
   box-shadow: 0 1rem 3rem rgb(52 3 45 / 30%);
   padding: 10px;
-  margin: 4px;
-  width: 35%;
   height: 286px;
+  width: 40%;
 }
 .card h3 {
   font-weight: 400;
@@ -278,6 +270,7 @@ i {
   align-items: center;
   justify-content: center;
   padding-top: 10px;
+  z-index: 1;
 }
 
 .posterPelicula {
@@ -290,7 +283,6 @@ i {
 }
 
 .top-row {
-  /* padding: 1rem; */
   display: flex;
   font-weight: 800;
   font-size: 10px;
@@ -298,6 +290,7 @@ i {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 10px;
+  z-index: -7;
 }
 
 .content {
@@ -314,6 +307,7 @@ h3 {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  
 }
 
 
@@ -326,13 +320,13 @@ h3 {
   width: 350px;
   height: 180px;
   position: absolute;
-  top: 25%;
-  left: 39%;
+  top: 30%;
+  left: 10%;
 
 }
 
 .modalCard {
-  background-color: #ffffff7e;
+  background-color: #ffffffde;
   display: flex;
   flex-direction: column;
   justify-content:space-between;
@@ -348,6 +342,7 @@ h3 {
   box-shadow: 1rem 1rem 4rem 50px rgb(240 232 118 / 70%);
   border-radius: 20px;
   position: relative;
+  z-index: 4;
  
 }
 
@@ -366,7 +361,7 @@ h3 {
   position: absolute;
   right: 0;
   top: -106px;
-  z-index: 2;
+  z-index: 5;
 }
 
 .rankingInterno {
@@ -419,59 +414,27 @@ h3 {
   font-size: 20px;
 }
 
-/*.modalShadown {
-  box-shadow: 0 1rem 1rem rgba(240, 232, 118, 0.856);
-  opacity: 0.6;
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  height: auto;
-}*/
 
-/*.button {
-  color: #ffffff;
-  font-size: .8rem;
-  padding: .5rem .3rem;
-  letter-spacing: .1rem;
-  align-self: flex-end;
-}*/
-
-
-@media (max-width:1030px) {
-  .container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-  }
-}
 
 @media (min-width: 900px) {
-  .section1 {
-    align-items: flex-start; 
-    
-  }
+
   .card { 
-    width: 12%;
-    
+    max-width: 200px; 
+    width: 50%;
+    gap: 20px;
   }
+
+  .modalRanking {
+  top: 30%;
+  left: 34%;
+  }
+  
+  .btn-mostrarTodas {
+    position: absolute;
+    left: 2%;
+    top: 7%; 
+  }
+
 }
 
-/*@media (min-width: 1024px)  {
-  .menuDesplegable {
-     display: none;
-     margin-bottom: 0;
-     display: flex;
-     z-index: 1000;
-     opacity: 0;
-     visibility: hidden;
-  }
-}*/
 
-@media (min-widt: 436px ) {
-
-  .section1 {
-    height:auto;
-  } 
-
-};

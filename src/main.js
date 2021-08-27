@@ -4,23 +4,42 @@ import cardsPorDirector, {mostrarTodas, tipoOrden, tipoRanking} from './data.js'
 //variable principal en la que estamos metiendo todas las cards.
 let sectionOne = document.getElementById("section1");
 
+//funcion card peliculas
+export const tarjeta = (pelicula) => {
+    return  ` 
+    <div class="card">
+        <div class="top-row background-top-row">
+            <h4>${pelicula.title}</h4>
+        </div>
+        <img  class= "posterPelicula" src="${pelicula.poster}" alt="Imagen ${pelicula.title}">
+        <div class="content">
+            <h3>${pelicula.director}</h3>
+            <h3>Ranking ${pelicula.rt_score}</h3>
+        <!-- <button class="button background-top-row">Empezar</button> -->
+        </div>
+    </div>`;
+};
+
 //Estamos llamando esta función para que nos traiga todas las cartas cuando abrimos la pagina web
 sectionOne.innerHTML = mostrarTodas();
-
+//Se inyectan las cartas cuando se da clic en el boton ver todas
 document.getElementById("mostrarTodas").addEventListener("click", function desplegarDirector() {
-   sectionOne.innerHTML = mostrarTodas();
-} );
+
+    document.getElementById("menuDesplegableOrdenar").style.display ="none";
+    document.getElementById("menuDesplegableRanking").style.display ="none";
+    document.getElementById("menuCategorias").style.display ="none";
+    document.getElementById("modalRanking").style.display ="none";
+
+    sectionOne.innerHTML = mostrarTodas();
+});
 
 //Esta función nos desplega el menu de los directores completo
 document.getElementById("aFiltro").addEventListener("click", function desplegarMenu() {
     document.getElementById("menuCategorias").style.display ="flex";
     document.getElementById("menuDesplegableOrdenar").style.display ="none";
     document.getElementById("menuDesplegableRanking").style.display ="none";
-
+    document.getElementById("modalRanking").style.display ="none";
 });
-
-//Ocultar menu filtro
-
 
 
 //categorias del Menu desplegable 
@@ -75,6 +94,7 @@ document.getElementById("btnOrdenar").addEventListener("click", function despleg
    document.getElementById("menuDesplegableOrdenar").style.display ="flex";
    /*document.getElementById("menuDesplegableOrdenar").style.display ="none";*/
    document.getElementById("menuCategorias").style.display ="none";
+   document.getElementById("menuDesplegableRanking").style.display ="none";
    document.getElementById("modalRanking").style.display ="none";
 
 });
@@ -117,6 +137,7 @@ document.getElementById("modalRanking").addEventListener("click", function ocult
 document.getElementById("botonRanking").addEventListener("click", function menuDesplegarRanking(){
   document.getElementById("menuDesplegableRanking").style.display ="flex";
   document.getElementById("menuDesplegableOrdenar").style.display ="none";
+  document.getElementById("menuCategorias").style.display ="none";
 });
 
 //desplegar Cielo
@@ -133,4 +154,4 @@ document.getElementById("rankingTierra").addEventListener("click", function menu
   let rankingTierra = document.getElementById("rankingTierra").innerHTML;
   sectionOne.innerHTML = tipoRanking(rankingTierra);
   document.getElementById("menuDesplegableRanking").style.display ="none";
-} );
+});
